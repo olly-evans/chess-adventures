@@ -1,8 +1,11 @@
 #include <SFML/Graphics.hpp>
 
+#define SCREEN_WIDTH 1000
+#define SCREEN_HEIGHT 1000
+
 int main()
 {
-    auto window = sf::RenderWindow(sf::VideoMode({1920u, 1080u}), "CMake SFML Project");
+    auto window = sf::RenderWindow(sf::VideoMode({SCREEN_HEIGHT, SCREEN_WIDTH}), "Chess");
     window.setFramerateLimit(144);
 
     while (window.isOpen())
